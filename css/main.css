@@ -1,6 +1,9 @@
+/* theme */
+
 :root {
     --body-color: #dedbf9;
     --fg-color: #5b558b;
+    --fg-hover-color: #837db0;
     --fg-focus-color: #ff7070;
     --bg-color: #fff7f1;
     --link-color: #556a8b;
@@ -16,6 +19,7 @@
 [data-theme = "light"] {
     --body-color: #dedbf9;
     --fg-color: #5b558b;
+    --fg-hover-color: #837db0;
     --fg-focus-color: #ff7070;
     --bg-color: #fff7f1;
     --link-color: #556a8b;
@@ -31,6 +35,7 @@
 [data-theme = "dark"] {
     --body-color: #242237;
     --fg-color: #fff7f1;
+    --fg-hover-color: #ffdabe;
     --bg-color: #1b1929;
     --link-color: #bee3ff;
     --link-hovered-color: #a5d8ff;
@@ -46,6 +51,7 @@
     transition: 0.5s;
 }
 
+/* body */
 body {
     background-color: var(--body-color);
     color: var(--fg-color);
@@ -67,14 +73,7 @@ body {
     }
 }
 
-h1 {
-    font-family: "Noto Sans JP", sans-serif;
-}
-
-a:link{color: var(--link-color);}
-a:visited{color: var(--link-color);}
-a:active{color: var(--fg-focus-color)}
-a:hover{color: var(--link-hovered-color);}
+/* header */
 
 #header-functions {
     display: flex;
@@ -104,7 +103,7 @@ a:hover{color: var(--link-hovered-color);}
     text-decoration: none;
 }
 
-/* buttons */
+/* header buttons */
 #buttonThemeToggle {
     border: 0;
     background-color: transparent;
@@ -118,7 +117,21 @@ a:hover{color: var(--link-hovered-color);}
     height: 2rem;
 }
 
-/* icon colour */
+/* header button colour */
 .stroke * {
     stroke: var(--fg-color);
 }
+
+.stroke:hover * {
+    stroke: var(--fg-hover-color);
+}
+
+/* style */
+h1 {
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+a:link{color: var(--link-color);}
+a:visited{color: var(--link-color);}
+a:active{color: var(--fg-focus-color)}
+a:hover{color: var(--link-hovered-color);}
