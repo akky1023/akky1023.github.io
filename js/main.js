@@ -11,7 +11,7 @@ if (currentTheme === "dark") {
 buttonThemeToggle.addEventListener("click", () => {
         let theme = "light";
         buttonThemeToggle.setAttribute("aria-pressed", false);
-        buttonThemeToggleIcon.setAttribute("class", "fa-soild fa-moon");
+        buttonThemeToggleIcon.setAttribute("class", "fa-solid fa-moon");
 
         if (document.documentElement.getAttribute("data-theme") !== "dark") {
             theme = "dark";
