@@ -1,8 +1,8 @@
 :root {
-    --body-color: #fff7f1;
+    --body-color: #dedbf9;
     --fg-color: #5b558b;
     --fg-focus-color: #ff7070;
-    --bg-color: #dedbf9;
+    --bg-color: #fff7f1;
 }
 
 @media (prefers-color-scheme: dark) {
