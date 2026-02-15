@@ -5,6 +5,15 @@
         <title>Neomenia | プロフィール</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            (function() {
+                const savedTheme = localStorage.getItem("theme");
+                const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+                if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
+                    document.documentElement.setAttribute("data-theme", "dark");
+                }
+            })();
+        </script>
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/fonts.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,6 +30,6 @@
             </h1>
         </div>
 
-        <script src="js/main.js" async></script>
+        <script src="/js/theme.js"></script>
     </body>
 </html>
