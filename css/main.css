@@ -47,10 +47,6 @@
     }
 }
 
-* {
-    transition: 0.5s;
-}
-
 /* body */
 body {
     background-color: var(--body-color);
@@ -58,7 +54,8 @@ body {
     font-family: "Noto Sans JP", sans-serif;
     font-weight: 400;
     font-style: normal;
-    margin: 8px;
+    margin: 0.5rem;
+    transition: 0.5s;
 }
 
 #wholepage {
@@ -67,7 +64,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    padding: 8px;
+    padding: 0.5rem;
+    transition: 0.5s;
     @media screen and (max-width: 480px) {
 
     }
@@ -90,9 +88,10 @@ body {
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 0;
-    min-width: 1em;
+    width: 1em;
+    height: auto;
     color: var(--fg-color);
-    gap: 0.5em
+    margin: 0.5em;
 }
 
 #header-functions li:first-of-type {
@@ -101,18 +100,29 @@ body {
 
 #header-functions li a {
     text-decoration: none;
+    vertical-align: initial;
+}
+
+#header-functions li a svg {
+    vertical-align: initial;
+}
+
+#header-functions li button svg {
+    vertical-align: initial;
 }
 
 /* header buttons */
-#buttonThemeToggle {
+.header-button {
     border: 0;
     background-color: transparent;
     width: fit-content;
+    height: auto;
     padding: 0;
     font-size: 1em;
+    vertical-align: initial;
 }
 
-.header {
+.header-icon {
     width: 2rem;
     height: 2rem;
 }
@@ -120,10 +130,12 @@ body {
 /* header button colour */
 .stroke-hoverable * {
     stroke: var(--fg-color);
+    transition: 0.1s;
 }
 
 .stroke-hoverable:hover * {
     stroke: var(--fg-hover-color);
+    transition: 0.2s;
 }
 
 .stroke * {
