@@ -1,0 +1,7 @@
+source "https://rubygems.org"
+
+# GitHub Pagesの環境とバージョンを同期させるためのGem
+gem "github-pages", group: :jekyll_plugins
+
+# WindowsやRuby 3.0以上を使用している場合，webrickが必要になることが多い
+gem "webrick"
