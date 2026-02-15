@@ -112,18 +112,29 @@ body {
     font-size: 1em;
 }
 
-.stroke{
+.header {
     width: 2rem;
     height: 2rem;
 }
 
 /* header button colour */
+.stroke-hoverable * {
+    stroke: var(--fg-color);
+}
+
+.stroke-hoverable:hover * {
+    stroke: var(--fg-hover-color);
+}
+
 .stroke * {
     stroke: var(--fg-color);
 }
 
-.stroke:hover * {
-    stroke: var(--fg-hover-color);
+.inline-svg{
+    max-height: 1.3em;
+    display: inline-block;
+    position: relative;
+    vertical-align: bottom;
 }
 
 /* style */
