@@ -9,9 +9,11 @@ if (currentTheme === "dark") {
 
 buttonThemeToggle.addEventListener("click", () => {
         let theme = "light";
+        buttonThemeToggle.setAttribute("aria-pressed", false)
 
         if (document.documentElement.getAttribute("data-theme") !== "dark") {
             theme = "dark"
+            buttonThemeToggle.setAttribute("aria-pressed", true)
         }
 
         document.documentElement.setAttribute("data-theme", theme);
