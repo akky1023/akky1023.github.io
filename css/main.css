@@ -6,11 +6,9 @@
 }
 
 [data-theme = "dark"] {
-    :root {    
-        --body-color: #242237;
-        --fg-color: #fff7f1;
-        --bg-color: #1b1929;
-    }
+    --body-color: #242237;
+    --fg-color: #fff7f1;
+    --bg-color: #1b1929;
 }
 
 body {
