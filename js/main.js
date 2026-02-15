@@ -11,12 +11,12 @@ if (currentTheme === "dark") {
 buttonThemeToggle.addEventListener("click", () => {
         let theme = "light";
         buttonThemeToggle.setAttribute("aria-pressed", false);
-        buttonThemeToggleIcon.setAttribute("class", "fa-solid fa-moon");
+        buttonThemeToggleIcon.setAttribute("href", "#dark");
 
         if (document.documentElement.getAttribute("data-theme") !== "dark") {
             theme = "dark";
             buttonThemeToggle.setAttribute("aria-pressed", true);
-            buttonThemeToggleIcon.setAttribute("class", "fa-regular fa-sun");
+            buttonThemeToggleIcon.setAttribute("href", "#light");
         }
 
         document.documentElement.setAttribute("data-theme", theme);
