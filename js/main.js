@@ -1,10 +1,3 @@
-// embed header
-
-fetch("header.html")
-  .then((response) => response.text())
-  .then((data) => document.querySelector("#header").innerHTML = data);
-
-  
 // toggle theme light/dark
 
 const buttonThemeToggle = document.getElementById("buttonThemeToggle");
