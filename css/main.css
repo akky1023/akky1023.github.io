@@ -130,7 +130,7 @@ body {
 /* header button colour */
 .stroke-hoverable * {
     stroke: var(--fg-color);
-    transition: 0.1s;
+    transition: 0.2s;
 }
 
 .stroke-hoverable:hover * {
@@ -140,6 +140,7 @@ body {
 
 .stroke * {
     stroke: var(--fg-color);
+    transition: 0.5s;
 }
 
 .inline-svg{
