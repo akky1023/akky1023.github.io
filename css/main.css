@@ -5,7 +5,7 @@
     --bg-color: #fff7f1;
 }
 
-@media (prefers-color-scheme: dark) {
+[data-theme = "dark"] {
     :root {    
         --body-color: #242237;
         --fg-color: #fff7f1;
@@ -19,7 +19,8 @@ body {
     font-family: "Noto Sans JP", sans-serif;
     font-weight: 400;
     font-style: normal;
-    margin: 8px
+    margin: 8px;
+    transition: 0.3s;
 }
 
 #wholepage {
@@ -34,5 +35,5 @@ body {
 }
 
 h1 {
-    font-family: "Klee One", "Noto Sans JP", sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
 }
