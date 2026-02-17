@@ -65,10 +65,7 @@ html {
 body {
     background-color: var(--bg-color);
     box-sizing: content-box;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0 auto;
     max-width: 60rem;
     height: fit-content;
     padding: 1rem
@@ -96,7 +93,7 @@ body {
     vertical-align: auto;
 }
 
-#header-functions li:first-of-type {
+#header-functions li:nth-child(2) {
     margin-right: auto;
 }
 
@@ -150,6 +147,16 @@ body {
     display: inline-block;
     position: relative;
     vertical-align: bottom;
+}
+
+/* footer (unused) */
+#footer {
+    display: flex;
+    list-style: none;
+}
+
+#footer li::after{
+    content: "/";
 }
 
 /* title */
@@ -209,4 +216,8 @@ table {
     margin-left: auto;
     margin-right: auto;
     color: var(--fg-color);
+}
+
+th, td {
+    padding: 0.25rem 0.5rem;
 }
