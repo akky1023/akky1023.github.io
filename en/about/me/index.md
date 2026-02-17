@@ -19,6 +19,6 @@ I can understand English a little, really a little.
 
 I prefer cats to dogs.
 
-Feel free to talk with me. I might not hate any topics. I also act same as you.
+Feel free to talk with me. I don't hate any topics maybe. I also act same as you.
 
 Sorry, I'm gonna correct it. I don't like who decide people by the result of 16 personalities test. However, it's good as fun game.
