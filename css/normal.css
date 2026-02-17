@@ -81,6 +81,13 @@ body {
 }
 
 /* header */
+header {
+    position: sticky;
+    top:0 ;
+    z-index: 1000;
+    background-color: var(--bg-color);
+}
+
 #header-functions {
     display: flex;
     list-style: none;
