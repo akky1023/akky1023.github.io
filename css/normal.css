@@ -6,6 +6,9 @@
     --fg-hover-color: #837db0;
     --fg-focus-color: #ff7070;
     --bg-color: #fff7f1;
+    --bg-subcolor: #f1f9ff;
+    --bg-strongcolor: #ffe8d8;
+    --bg-strongsubcolor: #d8eeff;
     --link-color: #556a8b;
     --link-hovered-color: #7687a2;
     .light{
@@ -22,6 +25,9 @@
     --fg-hover-color: #837db0;
     --fg-focus-color: #ff7070;
     --bg-color: #fff7f1;
+    --bg-subcolor: #f1f9ff;
+    --bg-strongcolor: #ffe8d8;
+    --bg-strongsubcolor: #d8eeff;
     --link-color: #556a8b;
     --link-hovered-color: #7687a2;
     .light{
@@ -37,6 +43,9 @@
     --fg-color: #fff7f1;
     --fg-hover-color: #ffdabe;
     --bg-color: #1b1929;
+    --bg-subcolor: #272919;
+    --bg-strongcolor: #252339;
+    --bg-strongsubcolor: #363923;
     --link-color: #bee3ff;
     --link-hovered-color: #a5d8ff;
     .light{
@@ -175,18 +184,17 @@ h2 {
     font-family: "Noto Sans JP", sans-serif;
     font-weight: 700;
     font-size: 1.25rem;
-    max-width: 26rem;
+    max-width: 30rem;
     line-height: 1.75em;
     margin-left: auto;
     margin-right: auto;
     border-left: var(--fg-color) 0.5rem solid;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
 p {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0.4rem auto;
     font-size: 1rem;
     max-width: 30rem;
     line-height: 1.75em;
@@ -211,12 +219,22 @@ a:hover{color: var(--link-hovered-color);}
 
 /* table */
 table {
-    background-color: none;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: var(--bg-color);
+    margin: 0.75rem auto;
     color: var(--fg-color);
+    border: var(--fg-hover-color) 2px solid;
+    border-collapse: collapse;
 }
 
-th, td {
-    padding: 0.25rem 0.5rem;
+tbody > *:nth-of-type(even) {
+    background-color: var(--bg-strongcolor);
+}
+
+th {
+    padding: 0.3rem 0.75rem;
+    text-align: right;
+}
+
+td {
+    padding: 0.3rem 0.75rem;
 }
