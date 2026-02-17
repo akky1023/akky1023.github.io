@@ -48,7 +48,7 @@
 }
 
 /* body */
-body {
+html {
     background-color: var(--body-color);
     color: var(--fg-color);
     font-family: "Noto Sans JP", sans-serif;
@@ -59,21 +59,20 @@ body {
     transition: 0.5s;
 }
 
-#wholepage {
+body {
     background-color: var(--bg-color);
-    box-sizing: border-box;
+    box-sizing: content-box;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 60rem;
     padding: 0.5rem;
     transition: 0.5s;
-    @media screen and (max-width: 480px) {
-
-    }
+    height: fit-content;
 }
 
 /* header */
-
 #header-functions {
     display: flex;
     list-style: none;
@@ -160,3 +159,8 @@ a:link{color: var(--link-color);}
 a:visited{color: var(--link-color);}
 a:active{color: var(--fg-focus-color)}
 a:hover{color: var(--link-hovered-color);}
+
+/* table */
+table{
+    background-color: none;
+}
