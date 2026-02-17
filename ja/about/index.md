@@ -6,3 +6,8 @@ layout: parent
 
 ## 子ページ
 - [管理者のページ](/ja/about/me/)
+
+## 記事一覧
+<details><summary>クリックで展開</summary>
+ああああ
+</details>

@@ -2,7 +2,7 @@
     <nav id="header">
         <ol id="header-functions">
             <li>
-                <a href="/{{ page.lang | default: site.lang }}/" aria-label="トップページ" class="stroke-hoverable header-button">
+                <a href="/ja/" aria-label="トップページ" class="stroke-hoverable header-button">
                     <svg viewBox="0 0 24 24" fill="none" class="header-icon root" xmlns="http://www.w3.org/2000/svg" width="2rem">
                         <path d="M2 13c1.5-3 4-3 5.5 0s4 3 5.5 0 M15 21l6-16" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
@@ -16,7 +16,7 @@
                 </a>
             </li>
             <li>
-                <a href="/{{ page.lang | default: site.lang }}/about/" aria-label="このサイトについて" class="stroke-hoverable header-button">
+                <a href="/ja/about/" aria-label="このサイトについて" class="stroke-hoverable header-button">
                     <svg viewBox="0 0 24 24" fill="none" class="header-icon info" xmlns="http://www.w3.org/2000/svg" width="2rem">
                         <path d="M12 8H12.01M12 11V16M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
@@ -33,10 +33,17 @@
             <li>
                 <button id="buttonLangToggle" aria-label="Language" class="header-button">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="header-icon lang" width="2rem">
-                        <rect width="24" height="24" fill="#00247d"/>
-                        <path d="M2 0L0 2L22 24L24 22Z M24 2L22 0L0 22L2 24Z" fill="white"/>
-                        <path d="M10 0H14V24H10Z M0 10V14H24V10Z" fill="white"/>
-                        <path d="M11 0H13V24H11Z M0 11V13H24V11Z" fill="#cf142b"/>
+                        <defs>
+                            <clipPath id="rounded">
+                                <rect width="24" height="24" rx="6" ry="6"/>
+                            </clipPath>
+                        </defs>
+                        <g clip-path="url(#rounded)">
+                            <rect width="24" height="24" rx="3" fill="#00247d"/>
+                            <path d="M2 0L0 2L22 24L24 22Z M24 2L22 0L0 22L2 24Z" fill="white"/>
+                            <path d="M10 0H14V24H10Z M0 10V14H24V10Z" fill="white"/>
+                            <path d="M11 0H13V24H11Z M0 11V13H24V11Z" fill="#cf142b"/>
+                        </g>
                     </svg>
                 </button>
             </li>

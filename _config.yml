@@ -1,2 +1,12 @@
 title: Neomenia
-lang: "ja"
+
+defaults:
+  - scope:
+      path: "ja"
+    values:
+      lang: "ja"
+
+  - scope:
+      path: "en"
+    values:
+      lang: "en"

@@ -1,7 +1,6 @@
 ---
 title: About Me
 layout: child
-lang: en
 ---
 Well, hello. I'm Aki Neomenia.
 

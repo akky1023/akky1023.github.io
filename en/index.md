@@ -1,6 +1,5 @@
 ---
 layout: index
-lang: en
 ---
 
 Under construct.
