@@ -5,12 +5,12 @@ layout: child
 Well, hello. I'm Aki Neomenia.
 
 ## My Personal Info.
-Okay, I write down my information.
+Okay, here are my information.
 
 | Birthday | 2006-10-23 |
 | Blood type | A |
-| Born | The pref. border between Fukuoka and Saga (Japan) |
-| 1st language | Japanese |
+| Born in | The pref. border between Fukuoka and Saga (Japan) |
+| Native lang. | Japanese |
 | Pronoun | He/Him |
 
 ## Others
@@ -20,4 +20,4 @@ I prefer cats to dogs.
 
 Feel free to talk with me. I don't hate any topics maybe. I also act same as you.
 
-Sorry, I'm gonna correct it. I don't like who decide people by the result of 16 personalities test. However, it's good as fun game.
+Oops, lemme correct it. I don't like who decide people by the result of 16 personalities test. However, it's good as fun game.

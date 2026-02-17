@@ -219,6 +219,16 @@ ul {
     list-style-type: circle;
 }
 
+details {
+    margin: 0.5rem auto;
+    max-width: 30rem;
+    line-height: 1.75em;
+}
+
+details ul {
+    margin-top: 0;
+}
+
 a:link{color: var(--link-color);}
 a:visited{color: var(--link-color);}
 a:active{color: var(--fg-focus-color)}
