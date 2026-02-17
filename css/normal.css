@@ -48,6 +48,10 @@
 }
 
 /* body */
+* {
+    transition: all 0.5s;
+}
+
 html {
     background-color: var(--body-color);
     color: var(--fg-color);
@@ -56,7 +60,6 @@ html {
     font-style: normal;
     font-display: swap;
     margin: 0.5rem;
-    transition: 0.5s;
 }
 
 body {
@@ -67,9 +70,8 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     max-width: 60rem;
-    padding: 0.5rem;
-    transition: 0.5s;
     height: fit-content;
+    padding: 1rem
 }
 
 /* header */
@@ -79,19 +81,19 @@ body {
     align-items: stretch;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0;
     padding: 0;
-    font-size: 2rem;
-    margin: 0.5rem
+    height: fit-content;
 }
 
 #header-functions li {
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 0;
-    width: 1em;
-    height: auto;
+    width: fit-content;
     color: var(--fg-color);
     margin: 0.5em;
+    vertical-align: auto;
 }
 
 #header-functions li:first-of-type {
@@ -99,16 +101,17 @@ body {
 }
 
 #header-functions li a {
-    text-decoration: none;
-    vertical-align: initial;
+    vertical-align: top;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
 }
 
-#header-functions li a svg {
-    vertical-align: initial;
-}
-
-#header-functions li button svg {
-    vertical-align: initial;
+#header-functions li button {
+    vertical-align: top;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
 }
 
 /* header buttons */
@@ -127,20 +130,19 @@ body {
     height: 2rem;
 }
 
-/* header button colour */
+/* header button color */
 .stroke-hoverable * {
     stroke: var(--fg-color);
-    transition: 0.2s;
+    transition: 0.25s;
 }
 
 .stroke-hoverable:hover * {
     stroke: var(--fg-hover-color);
-    transition: 0.2s;
+    transition: 0.25s;
 }
 
 .stroke * {
     stroke: var(--fg-color);
-    transition: 0.5s;
 }
 
 .inline-svg{
@@ -150,9 +152,50 @@ body {
     vertical-align: bottom;
 }
 
-/* style */
+/* title */
 h1 {
     font-family: "Noto Sans JP", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    max-width: 16em;
+    line-height: 1.75em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    box-sizing: content-box;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    max-width: 26rem;
+    line-height: 1.75em;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: var(--fg-color) 0.5rem solid;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+p {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+    max-width: 30rem;
+    line-height: 1.75em;
+}
+
+ul {
+    box-sizing: border-box;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    max-width: 30rem;
+    line-height: 1.75em;
+    list-style-type: circle;
 }
 
 a:link{color: var(--link-color);}
@@ -161,6 +204,9 @@ a:active{color: var(--fg-focus-color)}
 a:hover{color: var(--link-hovered-color);}
 
 /* table */
-table{
+table {
     background-color: none;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--fg-color);
 }
