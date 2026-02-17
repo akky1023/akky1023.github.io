@@ -5,8 +5,19 @@ defaults:
       path: "ja"
     values:
       lang: "ja"
-
+  - scope:
+      path: "_posts/ja"
+    values:
+      layout: "child"
+      lang: "ja"
+      permalink: "/ja/posts/:year-:month-:day-:title/"
   - scope:
       path: "en"
     values:
       lang: "en"
+  - scope:
+      path: "_posts/en"
+    values:
+      layout: "child"
+      lang: "en"
+      permalink: "/en/posts/:year-:month-:day-:title/"

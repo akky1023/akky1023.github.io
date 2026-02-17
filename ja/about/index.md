@@ -6,15 +6,3 @@ layout: parent
 
 ## 子ページ
 - [管理者のページ](/ja/about/me/)
-
-## 全記事一覧
-<details>
-    <summary>クリックで展開</summary>
-    <ul>
-    {% for post in site.posts %}
-        <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-    {% endfor %}
-    </ul>
-</details>
