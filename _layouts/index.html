@@ -9,7 +9,12 @@
     </head>
 
     <body>
-        {% include header-{{ page.lang | default: site.lang }}.html %}
+        {% if page.lang %}
+            {% capture header-file %}header-{{ page.lang | default: site.lang }}.html{% endcapture %}
+            {% include {{ header-file }} %}
+        {% else %}
+            {% include header-ja.html %}
+        {% endif %}
         <h1>Neomenia</h1>
 
         {{ content }}
