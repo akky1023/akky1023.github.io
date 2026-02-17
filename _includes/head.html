@@ -3,13 +3,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Cache-Control" content="no-cache">
 <script>
-    (function() {
-        const savedTheme = localStorage.getItem("theme");
-        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-        if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
-            document.documentElement.setAttribute("data-theme", "dark");
-        }
-    })();
+    const savedTheme = localStorage.getItem("theme");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
+        document.documentElement.setAttribute("data-theme", "dark");
+    }
+    const savedLang = localStorage.getItem("lang");
+    const settingLang = (navigator.language || navigator.userLanguage || "en").toLowerCase() === "ja";
+    if (savedLang === "ja" || settingLang){
+        document.documentElement.setAttribute("data-lang", "ja")
+    }
 </script>
 <link rel="stylesheet" href="/css/normal.css">
 <link rel="preconnect" href="https://fonts.googleapis.com" />

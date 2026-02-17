@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="{{ page.lang | default: site.lang }}">
     <head>
         {% include head.html %}
         <style>
@@ -9,11 +9,12 @@
     </head>
 
     <body>
-        {% include header.html %}
+        {% include header-{{ page.lang | default: site.lang }}.html %}
         <h1>Neomenia</h1>
 
         {{ content }}
 
         <script src="/js/theme.js"></script>
+        <script src="/js/lang.js"></script>
     </body>
 </html>
