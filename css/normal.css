@@ -143,10 +143,9 @@ body {
 }
 
 .inline-svg{
-    max-height: 1.3em;
     display: inline-block;
     position: relative;
-    vertical-align: bottom;
+    vertical-align: sub;
 }
 
 /* footer (unused) */
