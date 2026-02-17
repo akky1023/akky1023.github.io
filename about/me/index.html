@@ -1,30 +1,14 @@
 ---
+title: 管理者のページ
 ---
 <html lang="ja">
     <head>
-        <title>Neomenia | 管理者のページ</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="Cache-Control" content="no-cache">
-        <script>
-            (function() {
-                const savedTheme = localStorage.getItem("theme");
-                const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-                if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
-                    document.documentElement.setAttribute("data-theme", "dark");
-                }
-            })();
-        </script>
-        <link rel="stylesheet" href="/css/normal.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link rel="preload" as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" media="print" onload='this.media="all"' />
+        {% include head.html %}
     </head>
 
     <body>
         {% include header.html %}
-        <h1>管理者のページ</h1>
+        <h1>{{ page.title }}</h1>
         <p>とりあえず，こんにちは．狐月秋と名乗っています．</p>
 
         <h2>個人情報開示タイム</h2>
