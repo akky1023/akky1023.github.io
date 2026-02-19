@@ -274,7 +274,7 @@ ul {
     list-style-type: circle;
 }
 
-ol:not#header-functions {
+ol:not(#header-functions) {
     box-sizing: border-box;
     font-size: 1rem;
     margin-left: auto;
