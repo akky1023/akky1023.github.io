@@ -220,6 +220,31 @@ p {
     line-height: 1.75em;
 }
 
+blockquote {
+    box-sizing: border-box;
+    padding: 1rem;
+    max-width: 30rem;
+    background-color: var(--bg-subcolor);
+    margin: 0.5rem auto;
+    border-left: var(--bg-strongsubcolor) solid 0.3rem;
+}
+
+blockquote p {
+    padding: 0;
+    margin: 0;
+    color: hsl(from var(--fg-color) h s l/0.75);
+}
+
+blockquote > p:last-child {
+    font-style: italic;
+    font-size: 0.8rem;
+    margin-left: 30%;
+    margin-right: 0.5rem;
+    padding-left: 0.5rem;
+    display: list-item;
+    list-style-type: "\2014\2014";
+}
+
 ul {
     box-sizing: border-box;
     font-size: 1rem;
@@ -244,7 +269,7 @@ details ul {
 
 a:link{color: var(--link-color);}
 a:visited{color: var(--link-color);}
-a:active{color: var(--fg-focus-color)}
+a:active{color: var(--fg-focus-color);}
 a:hover{color: var(--link-hovered-color);}
 
 /* table */
