@@ -249,9 +249,10 @@ blockquote p {
     color: hsl(from var(--fg-color) h s l/0.75);
 }
 
-blockquote > p:last-child {
+blockquote cite {
     font-style: italic;
     font-size: 0.8rem;
+    line-height: 1.75em;
     margin-left: 30%;
     margin-right: 0.5rem;
     margin-top: 0.75rem;
