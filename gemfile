@@ -5,3 +5,6 @@ gem "github-pages", group: :jekyll_plugins
 
 # WindowsやRuby 3.0以上を使用している場合，webrickが必要になることが多い
 gem "webrick"
+
+# Windows環境でのみタイムゾーンデータベースを使用するための設定
+gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
