@@ -55,10 +55,10 @@
     --fg-code-color: #fff7f1;
     --fg-hover-color: #ffdabe;
     --bg-color: #1b1929;
-    --bg-subcolor: #272919;
+    --bg-subcolor: #194466;
     --bg-code-color: #2e2c2a;
     --bg-strongcolor: #252339;
-    --bg-strongsubcolor: #363923;
+    --bg-strongsubcolor: #1e527a;
     --link-color: #bee3ff;
     --link-hovered-color: #a5d8ff;
     --em-color-r: #eb8080;
@@ -186,8 +186,29 @@ header {
     list-style: none;
 }
 
-#footer li::after{
+#footer li::after {
     content: "/";
+}
+
+/* index page */
+#latest-article {
+    max-width: 36rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link2article {
+    display: block;
+    width: fit-content;
+    margin-right: 2rem;
+    margin-left: auto;
+}
+
+.postdate {
+    display: inline;
+    text-align: right;
+    font-size: 0.8rem;
+    font-weight: normal;
 }
 
 /* title */
