@@ -44,7 +44,7 @@
   margin: 0;
 }
 
-/*
+/* idk it's need or notR
 .highlight,
 .highlight .w {
   color: #24292f;
@@ -199,4 +199,28 @@
 .highlight .gs {
   color: var(--dgrey);
   font-weight: bold;
+}
+
+/* copy button */
+div.highlight {
+    position: relative;
+}
+
+.copy-code-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 3px 8px;
+    font-size: 12px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.copy-code-button:hover {
+    opacity: 1;
+    background-color: #ddd;
 }
