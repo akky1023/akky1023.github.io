@@ -1,0 +1,202 @@
+:root {
+  --red: #cf222e;
+  --msg: #f6f8fa;
+  --gdel: #82071e;
+  --orange: #953800;
+  --green: #116329;
+  --lblue: #0550ae;
+  --dblue: #0a3069;
+  --purple: #8250df;
+  --lgrey: #6e7781;
+  --dgrey: #24292f;
+}
+
+[data-theme = "light"] {
+  --red: #cf222e;
+  --msg: #f6f8fa;
+  --gdel: #82071e;
+  --orange: #953800;
+  --green: #116329;
+  --lblue: #0550ae;
+  --dblue: #0a3069;
+  --purple: #8250df;
+  --lgrey: #6e7781;
+  --dgrey: #24292f;
+}
+
+[data-theme = "dark"] {
+  --red: #d9333f;
+  --msg: #e6e6e6;
+  --gdel: #e2041b;
+  --orange: #ff914d;
+  --green: #1a9940;
+  --lblue: #66abff;
+  --dblue: #3668b3;
+  --purple: #aa8ae6;
+  --lgrey: #adbccc;
+  --dgrey: #41474d;
+}
+
+.highlight table td {
+  padding: 5px;
+}
+.highlight table pre {
+  margin: 0;
+}
+
+/*
+.highlight,
+.highlight .w {
+  color: #24292f;
+  background-color: #f6f8fa;
+}
+*/
+
+.highlight .k,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kt,
+.highlight .kv {
+  color: var(--red);
+}
+.highlight .gr {
+  color: var(--msg);
+}
+.highlight .gd {
+  color: var(--gdel);
+  /* background-color: #ffebe9; */
+}
+.highlight .nb {
+  color: var(--orange);
+}
+.highlight .nc {
+  color: var(--orange);
+}
+.highlight .no {
+  color: var(--orange);
+}
+.highlight .nn {
+  color: var(--orange);
+}
+.highlight .sr {
+  color: var(--green);
+}
+.highlight .na {
+  color: var(--green);
+}
+.highlight .nt {
+  color: var(--green);
+}
+.highlight .gi {
+  color: var(--green);
+  /* background-color: #dafbe1; */
+}
+.highlight .ges {
+  font-weight: bold;
+  font-style: italic;
+}
+.highlight .kc {
+  color: var(--lblue);
+}
+.highlight .l,
+.highlight .ld,
+.highlight .m,
+.highlight .mb,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .il,
+.highlight .mo,
+.highlight .mx {
+  color: var(--lblue);
+}
+.highlight .sb {
+  color: var(--lblue);
+}
+.highlight .bp {
+  color: var(--lblue);
+}
+.highlight .ne {
+  color: var(--lblue);
+}
+.highlight .nl {
+  color: var(--lblue);
+}
+.highlight .py {
+  color: var(--lblue);
+}
+.highlight .nv,
+.highlight .vc,
+.highlight .vg,
+.highlight .vi,
+.highlight .vm {
+  color: var(--lblue);
+}
+.highlight .o,
+.highlight .ow {
+  color: var(--lblue);
+}
+.highlight .gh {
+  color: var(--lblue);
+  font-weight: bold;
+}
+.highlight .gu {
+  color: var(--lblue);
+  font-weight: bold;
+}
+.highlight .s,
+.highlight .sa,
+.highlight .sc,
+.highlight .dl,
+.highlight .sd,
+.highlight .s2,
+.highlight .se,
+.highlight .sh,
+.highlight .sx,
+.highlight .s1,
+.highlight .ss {
+  color: var(--dblue);
+}
+.highlight .nd {
+  color: var(--purple);
+}
+.highlight .nf,
+.highlight .fm {
+  color: var(--purple);
+}
+.highlight .err {
+  color: var(--msg);
+  /* background-color: #82071e; */
+}
+.highlight .c,
+.highlight .ch,
+.highlight .cd,
+.highlight .cm,
+.highlight .cp,
+.highlight .cpf,
+.highlight .c1,
+.highlight .cs {
+  color: var(--lgrey);
+}
+.highlight .gl {
+  color: var(--lgrey);
+}
+.highlight .gt {
+  color: var(--lgrey);
+}
+.highlight .ni {
+  color: var(--dgrey);
+}
+.highlight .si {
+  color: var(--dgrey);
+}
+.highlight .ge {
+  color: var(--dgrey);
+  font-style: italic;
+}
+.highlight .gs {
+  color: var(--dgrey);
+  font-weight: bold;
+}
