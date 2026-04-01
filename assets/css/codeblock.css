@@ -1,6 +1,6 @@
 :root {
   --red: #cf222e;
-  --msg: #f6f8fa;
+  --msg: #2b2b2b;
   --gdel: #82071e;
   --orange: #953800;
   --green: #116329;
@@ -9,11 +9,13 @@
   --purple: #8250df;
   --lgrey: #6e7781;
   --dgrey: #24292f;
+  --bg-button: #7ecbe9;
+  --fg-button: #333;
 }
 
 [data-theme = "light"] {
   --red: #cf222e;
-  --msg: #f6f8fa;
+  --msg: #2b2b2b;
   --gdel: #82071e;
   --orange: #953800;
   --green: #116329;
@@ -22,6 +24,8 @@
   --purple: #8250df;
   --lgrey: #6e7781;
   --dgrey: #24292f;
+  --bg-button: #7ecbe9;
+  --fg-button: #333;
 }
 
 [data-theme = "dark"] {
@@ -35,6 +39,8 @@
   --purple: #aa8ae6;
   --lgrey: #adbccc;
   --dgrey: #41474d;
+  --bg-button: #2a6d86;
+  --fg-button: #ccc;
 }
 
 .highlight table td {
@@ -203,24 +209,24 @@
 
 /* copy button */
 div.highlight {
-    position: relative;
+  position: relative;
 }
 
 .copy-code-button {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    background-color: #eee;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 3px 8px;
-    font-size: 12px;
-    cursor: pointer;
-    opacity: 0.7;
-    transition: opacity 0.2s;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: var(--bg-button);
+  border: none; 
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  color: var(--fg-button);
+  opacity: 0.7;
 }
 
 .copy-code-button:hover {
-    opacity: 1;
-    background-color: #ddd;
+  opacity: 1;
+  background-color: var(--bg-button);
 }
