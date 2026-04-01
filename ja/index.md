@@ -2,7 +2,7 @@
 layout: index
 ---
 
-こんにちは
+こんにちは！！
 
 ## 最新の3記事
 <div id="latest-article">
