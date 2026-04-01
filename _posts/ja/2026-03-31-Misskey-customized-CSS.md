@@ -2,6 +2,7 @@
 title: MisskeyのカスタムCSS
 lang: ja
 layout: posts
+last_modified_at: 2026-03-31
 ---
 Misskeyで使えるカスタムCSSです．
 以下の環境以外での動作を保証しません．

@@ -2,6 +2,7 @@
 title: Vivaldiの「よさ」をまとめる
 lang: ja
 layout: posts
+last_modified_at: 2026-03-31
 ---
 私は結局Vivaldiに戻ってきてしまう運命なのだ～～～
 
