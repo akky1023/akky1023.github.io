@@ -8,7 +8,8 @@ layout: index
 <div id="latest-article">
 {% assign ja_posts = site.posts | where: "lang", "ja" %}
 {% for post in ja_posts limit:3 %}
-    <h3>{{ post.title }}<span class="postdate"> ({{ post.date | date: "%Y-%m-%d" }}) </span></h3>
+    <h3>{{ post.title }}</h3>
+    <span class="postdate">(投稿日 {{ post.date | date: "%Y-%m-%d" }})</span>
     <blockquote style="width: 80%;">
         {{ post.excerpt }}
         <a href="{{ post.url }}" class="link2article">→ 続きをよむ</a>

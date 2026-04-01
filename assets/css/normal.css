@@ -205,7 +205,9 @@ header {
 }
 
 .postdate {
-    display: inline;
+    display: block;
+    margin-left: auto;
+    margin-right: 1rem;
     text-align: right;
     font-size: 0.8rem;
     font-weight: normal;
