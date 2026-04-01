@@ -370,7 +370,6 @@ td {
 }
 
 /* image */
-
 .img-wrapper {
     max-width: 80%;
     margin-left: auto;
@@ -390,7 +389,6 @@ img {
 }
 
 /* code block */
-
 code {
     background-color: var(--bg-code-color);
     font-family: monospace;
@@ -412,7 +410,6 @@ code {
 }
 
 /* footnote */
-
 .footnotes {
     border-top: 1px solid #333;
     margin-top: 2em;
