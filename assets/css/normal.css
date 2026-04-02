@@ -199,7 +199,7 @@ ul#markdown-toc {
 }
 
 ul#markdown-toc > li {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.33em;
 }
 
 ul#markdown-toc > li:last-of-type {
