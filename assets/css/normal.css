@@ -190,6 +190,51 @@ header {
     content: "/";
 }
 
+/* table of contents */
+ul#markdown-toc {
+    list-style-type: none;
+    padding: 0;
+    margin:0 ;
+    box-sizing: content-box;
+}
+
+ul#markdown-toc li {
+    margin: 0;
+}
+
+ul#markdown-toc li a {
+    text-decoration: none;
+}
+
+.toc-wrapper {
+    position: relative;
+    display: block;
+    max-width: 28rem;
+    margin: auto;
+    border-radius: 0.5em;
+    border: var(--bg-strongsubcolor) solid 2px;
+    overflow: hidden;
+}
+
+.toc {
+    padding-top: 1.5em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 1.5em;
+    font-size: 1rem
+} 
+
+.toc-title {
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    display: inline;
+    bottom: -0.3em;
+    right: -0.15em;
+    opacity: 0.2;
+    font-size: 5rem;
+}
+
 /* index page */
 #latest-article {
     max-width: 36rem;

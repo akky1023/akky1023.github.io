@@ -9,12 +9,7 @@ layout: child
 
 読む価値はないです．
 
-<nav markdown="1">
-
-* 
-{:toc}
-
-</nav>
+{% include toc-ja.html %}
 
 ## 趣味
 ありません．いうてずっと続いているのはパソコンいじいじですが．
