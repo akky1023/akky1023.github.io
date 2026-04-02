@@ -1,6 +1,9 @@
 title: Neomenia
 timezone: Asia/Tokyo
 
+kramdown:
+  toc_levels: 2
+
 defaults:
   - scope:
       path: "ja"
