@@ -2,7 +2,7 @@ title: Neomenia
 timezone: Asia/Tokyo
 
 kramdown:
-  toc_levels: 2..2
+  toc_levels: 2..3
 
 defaults:
   - scope:

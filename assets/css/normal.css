@@ -198,12 +198,29 @@ ul#markdown-toc {
     box-sizing: content-box;
 }
 
-ul#markdown-toc li {
-    margin: 0;
+ul#markdown-toc > li {
+    margin-bottom: 0.5em;
+}
+
+ul#markdown-toc > li:last-of-type {
+    margin-bottom: 0;
 }
 
 ul#markdown-toc li a {
     text-decoration: none;
+}
+
+ul#markdown-toc ul {
+    padding-left: 1.5em;
+    line-height: 1.5em;
+}
+
+ul#markdown-toc ul li {
+    list-style-type: "├";
+}
+
+ul#markdown-toc ul li:last-of-type {
+    list-style-type: "└";
 }
 
 .toc-wrapper {
