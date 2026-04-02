@@ -75,6 +75,8 @@
 * {
     transition: all 0.5s;
     text-autospace: normal;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5em;
 }
 
 html {
