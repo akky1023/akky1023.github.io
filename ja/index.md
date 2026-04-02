@@ -2,9 +2,11 @@
 layout: index
 ---
 
-こんにちは！！
+こんにちは！！　男です！！
 
 ## 最近更新された記事
+最近更新された記事を3つどうぞ．
+最初の一段落を引用ブロックとしてのせてますが，大体つかみが下手ですね．
 <div id="latest-article">
 {% assign ja_posts = site.posts | where: "lang", "ja" | sort: "last_modified_at" | reverse %}
 {% for post in ja_posts limit:3 %}
@@ -16,10 +18,3 @@ layout: index
     </blockquote>
 {% endfor %}
 </div>
-
-## 連絡先
-[akky1023.contact@gmail.com](mailto:akky1023.contact@gmail.com)
-
-または
-
-[Google Forms](https://docs.google.com/forms/d/e/1FAIpQLSdj1VXivdnrVk4x_AkABB58sLseZjkjflEJF7rYnK6GvvSa4A/viewform?usp=dialog)
