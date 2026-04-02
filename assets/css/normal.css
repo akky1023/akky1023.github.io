@@ -428,6 +428,7 @@ code {
     border-radius: 0.3em;
     font-size: 0.9rem;
     line-height: 1.5;
+    overflow-x: auto;
 }
 
 .highlighter-rouge {
