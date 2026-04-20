@@ -2,7 +2,7 @@
 title: MisskeyのカスタムCSS
 lang: ja
 layout: posts
-last_modified_at: 2026-03-31
+last_modified_at: 2026-04-20
 ---
 Misskeyで使えるカスタムCSSです．
 以下の環境以外での動作を保証しません．
@@ -16,24 +16,31 @@ Misskeyで使えるカスタムCSSです．
 あと普通に変な動作してても教えてください．
 
 ## タイムライン上のホーム/鍵/ダイレクト投稿の背景色をそれぞれ緑/赤/青にする
-最終更新日: 2026-03-31
+最終更新日: 2026-04-20
 ~~~css
 /* Home, note and reply */
+.xBwhh:has(.ti-home),
 .x5yeR:has(.ti-home),
 .xD2mX.xCFgx:has(.ti-home) {
     background-color: rgba(0, 135, 68 , 0.10) !important;
 }
 /* Direct, note and reply */
+.xBwhh:has(.ti-mail),
 .x5yeR:has(.ti-mail),
 .xD2mX.xCFgx:has(.ti-mail) {
     background-color: rgba(0, 87, 231, 0.10) !important;
 }
 /* Follower only, note and reply */
+.xBwhh:has(.ti-lock),
 .x5yeR:has(.ti-lock),
 .xD2mX.xCFgx:has(.ti-lock) {
     background-color: rgba(214, 45, 32, 0.10) !important;
 }
 ~~~
+
+### changelog
+* 2026-03-31 初版
+* 2026-04-20 引用投稿の背景色を修正
 
 ## ホーム/鍵/ダイレクト投稿の投稿フォームの*プレビュ*をそれぞれ緑/赤/青にする
 最終更新日: 2026-03-31
@@ -54,6 +61,9 @@ Misskeyで使えるカスタムCSSです．
 	background-color: rgba(214, 45, 32, 0.10) !important;
 }
 ~~~
+
+### changelog
+* 2026-03-31 初版
 
 ## ホーム/鍵/ダイレクト投稿の投稿フォーム*全体*{: .b}をそれぞれ緑/赤/青にする
 最終更新日: 2026-03-31
@@ -79,3 +89,6 @@ Misskeyで使えるカスタムCSSです．
     margin: 0;
 }
 ~~~
+
+### changelog
+* 2026-03-31 初版
